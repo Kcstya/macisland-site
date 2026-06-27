@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MacIsland — Notch widgets, music & live activities for Mac</title>
+  <meta name="description" content="MacIsland turns your MacBook notch into a hub: music controls, a timer, camera mirror, file tray, clipboard history and iPhone-style live activities." />
+  <style>
+    :root {
+      --bg: #0b0b0d;
+      --card: #161619;
+      --text: #f5f5f7;
+      --muted: #a1a1a8;
+      --accent: #ff2179;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    header { text-align: center; padding: 96px 0 56px; }
+    .pill {
+      display: inline-block; font-size: 13px; letter-spacing: 0.04em;
+      color: var(--muted); border: 1px solid var(--border);
+      border-radius: 999px; padding: 6px 14px; margin-bottom: 28px;
+    }
+    h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 700; letter-spacing: -0.02em; }
+    h1 span { color: var(--accent); }
+    .tagline { color: var(--muted); font-size: clamp(16px, 2.4vw, 20px); margin-top: 18px; }
+    .cta {
+      display: inline-block; margin-top: 36px; background: var(--accent);
+      color: #fff; text-decoration: none; font-weight: 600; font-size: 16px;
+      padding: 14px 30px; border-radius: 12px; transition: transform .15s ease, opacity .15s ease;
+    }
+    .cta:hover { transform: translateY(-1px); opacity: 0.92; }
+    .cta.secondary { background: transparent; border: 1px solid var(--border); color: var(--text); margin-left: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; padding: 40px 0 16px; }
+    .feature { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; }
+    .feature h3 { font-size: 17px; margin-bottom: 6px; }
+    .feature p { color: var(--muted); font-size: 14.5px; }
+    .section-title { text-align: center; font-size: 24px; font-weight: 700; margin: 56px 0 8px; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; padding: 64px 0 48px; border-top: 1px solid var(--border); margin-top: 64px; }
+    footer a { color: var(--muted); }
+    .req { text-align: center; color: var(--muted); font-size: 14px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="pill">For MacBook Pro / Air with a notch</span>
+      <h1>Make your notch <span>actually useful</span>.</h1>
+      <p class="tagline">
+        MacIsland turns the empty space around your MacBook notch into a hub —
+        music controls, a focus timer, camera mirror, file tray, clipboard history
+        and iPhone-style live activities. It stays out of your way until you need it.
+      </p>
+      <div>
+        <a class="cta" href="#buy">Get MacIsland</a>
+        <a class="cta secondary" href="#features">See features</a>
+      </div>
+      <p class="req">macOS 13 (Ventura) or later · Apple Silicon &amp; Intel</p>
+    </header>
+
+    <h2 class="section-title" id="features">Everything, around the notch</h2>
+    <div class="grid">
+      <div class="feature"><h3>🎵 Now Playing</h3><p>Control Apple Music &amp; Spotify with album art and a live waveform, right under the camera.</p></div>
+      <div class="feature"><h3>⏱️ Focus Timer</h3><p>A built-in timer you can adjust by scroll or drag, with an end alert.</p></div>
+      <div class="feature"><h3>🪞 Camera Mirror</h3><p>A quick selfie/mirror view to check yourself before a call.</p></div>
+      <div class="feature"><h3>🗂️ File Tray &amp; AirDrop</h3><p>Drag files onto the notch to stash them, then drag out or AirDrop in one move.</p></div>
+      <div class="feature"><h3>📋 Cupboard</h3><p>Your recent clipboard history, one click to re-copy.</p></div>
+      <div class="feature"><h3>⚡ Live Activities</h3><p>Charging and audio-device indicators that animate like the iPhone Dynamic Island.</p></div>
+    </div>
+
+    <h2 class="section-title" id="buy">Get MacIsland</h2>
+    <p class="tagline" style="text-align:center;">
+      One-time purchase. Your license works on your Macs and is easy to move between them.
+    </p>
+    <p style="text-align:center; margin-top: 24px;">
+      <!-- Replace the href below with your Lemon Squeezy checkout / store link -->
+      <a class="cta" href="https://YOUR-STORE.lemonsqueezy.com">Buy a license</a>
+    </p>
+
+    <footer>
+      <p>MacIsland · A macOS menu-bar / notch utility.</p>
+      <p style="margin-top:8px;">Questions? <a href="mailto:kcstya@gmail.com">kcstya@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
